@@ -1,0 +1,156 @@
+* {
+  background-color: transparent;
+  font-family: 'Jua', sans-serif;
+}
+
+body {
+  background-color: #ffffff;
+}
+
+img {
+  display: block;
+  margin: 20px auto;
+}
+.sign_box {
+  padding: 50px;
+  box-sizing: border-box;
+  background-color: #E1DAB9;
+  display: flex;
+  flex-direction: column;
+  max-width: 540px;
+  width: 70%;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 15px;
+}
+.sign_form {
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+}
+
+.title_text {
+  margin: 0 auto 5px auto;
+  text-align: left;
+  font-weight: 500;
+  color: #ffffff;
+  font-size: 1.25rem;
+}
+
+.input_textbox{
+  margin: 0 auto 20px auto;
+  padding: 10px;
+  border-radius: 10px;
+  width: 80%;
+  background-color: #C9C3AB;
+  box-sizing: border-box;
+}
+
+#sign_form_id_input {
+  box-sizing: border-box;
+  width: 100%;
+  background-color: transparent;
+  border: none;
+}
+#sign_form_pw_input {
+  box-sizing: border-box;
+  width: 100%;
+  background-color: #C9C3AB;
+  border: none;
+}
+
+.sign_in_button {
+  display: block;
+  margin: 10px auto 30px auto;
+  box-sizing: border-box;
+  border: none;
+  background-color: #98968E;
+  border-radius: 10px;
+  width: 80%;
+  height: 40px;
+  text-align: center;
+  color: #ffffff;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.sign_in_button:hover {
+  box-sizing: border-box;
+  border: solid #C9C3AB;
+}
+
+.sns_box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.sns_sign_in  p{
+  margin: 0 10px 0 0;
+  text-align: left;
+  color: #7D7D7B;
+  font-size: auto;
+}
+
+
+.sns_button {
+  box-sizing: border-box;
+  margin: 0;
+  width: 3em;
+  height: 3em;
+  border:none;
+  border-radius: 2.5rem;
+  background-color: #ffffff;
+  padding: 5px;
+}
+
+.sns_button:hover {
+  box-sizing: border-box;
+  border: solid #98968E;  
+}
+
+.sns_button img {
+  width: 80%;
+  height: 80%;
+  margin: 10% auto;
+}
+
+
+/*여기서부터는 회원가입 페이지 입니다*/
+h1 {
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+}
+.service_terms {
+  margin: 30px auto;
+  box-sizing: border-box;
+  border: solid #98968E;
+  overflow: scroll;
+  width: 90%;
+  height: 200px;
+}
+
+.privacy_terms{
+  margin: 30px auto;
+  box-sizing: border-box;
+  border: solid #98968E;
+  overflow: scroll;
+  width: 90%;
+  height: 200px;
+}
+
+.marketing_terms {
+  margin: 30px auto;
+  box-sizing: border-box;
+  border: solid #98968E;
+  overflow: scroll;
+  width: 90%;
+  height: 200px;
+}
+
+.before_level {
+
+}

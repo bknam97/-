@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Dr.Petpaw</title>
+    <link href="style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+  </head>
+  
+  <body>
+    <div class="main_image">
+     <a href="#"><img src="photos/Dr_Petpaw.png" height="250px"></a>
+    </div> 
+    
+    <div class="sign_box">
+      <form>
+        <div class="sign_form">
+          <p class="title_text">아이디</p>
+          <div class="input_textbox">
+            <input id="sign_form_id_input" placeholder="아이디를 입력해 주세요."  autocomplete value>
+          </div>
+          <p class="title_text">비밀번호</p>
+          <div class="input_textbox">
+            <input id="sign_form_pw_input" placeholder="비밀번호를 입력해 주세요." type="password" autocomplete="current-password" value>
+            <input type="submit" autocomplete="off" style="display: none;">
+          </div>
+        </div>
+      <form>
+      <div class="sign_in_button_wrpped">
+        <button class="sign_in_button">
+          <span>로그인</span>
+        </button>
+      </div>
+      <div class="sns_box">
+          <p>SNS 간편 로그인</p>
+          <div class="sns_button" id="google_sign_in">
+            <a href="#"><img src="photos/google-login.png"></a>
+          </div>
+          <div class="sns_button" id="naver_sign_in">
+            <a href="#"><img src="photos/naver-login.png"></a>
+          </div>
+          <div class="sns_button" id="kakao_sign_in">
+            <a href="#"><img src="photos/kakao-talk.svg"></a>
+          </div>
+          <div class="sns_button" id="apple_sign_in">
+            <a href="#"><img src="photos/apple-login.jpg"></a>
+          </div>
+      </div>
+      <div class="question_sign_up">
+        <p>아직 회원이 아니신가요?</p>
+        <a href="sign_up.html">회원가입</a>    
+      </div>
+    </div>
+        
+  
+      </div> <!--sign form-->
+    </div> <!--sign box-->
+    <script src="script.js"></script>
+  </body>
+</html>
