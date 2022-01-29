@@ -18,8 +18,8 @@
     <p>이미 회원이신가요?</p><a href="index.html">로그인하기</a>
     <h1>회원 계정 가입</h1>
     <h2>약관 동의</h2>
-    <input class="terms_checkbox" id="full-terms" type="checkbox" data-indeterminate="false">
-    <p>전체 약관 동의</p>  
+    <input class="terms_checkbox" name="full_terms" type="checkbox" data-indeterminate="false">
+      <label for="full_terms"><p>전체 약관 동의</p></label>  
     <div class="service_terms"
       <p>
         제 1 조 (목적)
@@ -254,8 +254,10 @@
         이용약관 시행일자 2021. 01.04.
       </p>
     </div> 
-    <input class="terms_checkbox" id="full-terms" type="checkbox" data-indeterminate="false">
-    <p>닥터펫포 이용 약관 동의</p>  
+    <input class="terms_checkbox" name="agree_terms" type="checkbox" data-indeterminate="false">
+    <label for="petpaw_terms">
+      <p>닥터펫포 이용 약관 동의 (필수)</p>  
+    </label>
     <div class="privacy_terms">
       <p>
         코드잇 개인정보 처리방침
@@ -407,8 +409,8 @@
         
       </p>
     </div>
-    <input class="terms_checkbox" id="full-terms" type="checkbox" data-indeterminate="false">
-    <p>개인정보 이용 및 수집에 동의</p>  
+    <input class="terms_checkbox" name="agree_terms" type="checkbox" data-indeterminate="false">
+    <p>개인정보 이용 및 수집에 동의 (필수)</p>  
     <div class="marketing_terms">
       <p>
         개인정보 수집 및 이용에 관한 동의
@@ -450,10 +452,10 @@
         확인
       </p>
     </div>
-    <input class="terms_checkbox" id="full-terms" type="checkbox" data-indeterminate="false">
-    <p>마케팅 정보 수신 및 선택적 개인정보 제공</p>  
+    <input class="terms_checkbox" name="agree_terms" type="checkbox" data-indeterminate="false">
+    <p>마케팅 정보 수신 및 선택적 개인정보 제공 (선택)</p>  
 
-    <button type="submit" class="before_level">
+    <button class="before_level">
       <a href="index.html"><span>< 이전</span></a>
     </button>
 
@@ -463,6 +465,44 @@
     
 
   
-    <script src="script.js"></script>
+  <script>
+    $(document).on("click", "input:checkbox[name=full_terms]",function() {
+      var agree_terms = '';
+      if ($(this).prop('checked')){
+        agree_terms = 'Y'; 
+      }
+      else {
+        agree_terms = 'N';
+      }
+
+      if(agree_terms == 'Y'){
+        $("input:checkbox[name=agree_terms]").prop('checked', true);
+      }
+      else {
+        $("input:checkbox[name=agree_terms]").prop('checked', false);
+      }
+    });
+
+    $(document).on("click", "input:checkbox[name=agree_terms]",function() {
+      var agree_terms = '';
+    
+      $("input:checkbox[name=agree_terms]").each(function() {
+      if($(this).prop('checked')){
+        agree_terms = 'Y';
+      }
+      else {
+        agree_terms = 'N';
+        return false;
+      }
+    });   
+
+    if(agree_terms == 'Y'){
+      $("input:checkbox[name=full_terms]").prop('checked', true);
+    } 
+    else {
+      $("input:checkbox[name=full_terms]").prop('checked', false);
+    }
+    });
+	</script>
   </body>
 </html>
