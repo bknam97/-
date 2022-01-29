@@ -92,7 +92,6 @@ img {
   font-size: auto;
 }
 
-
 .sns_button {
   box-sizing: border-box;
   margin: 0;
@@ -115,7 +114,19 @@ img {
   margin: 10% auto;
 }
 
+.question_sign_up {
+  display: block;
+  color: #98968E;
+}
 
+.question_sign_up::after{
+  margin: 20px;
+}
+
+a:-webkit-any-link {
+    color: #98968E;
+    cursor: pointer;
+}
 /*여기서부터는 회원가입 페이지 입니다*/
 h1 {
   text-align: center;
