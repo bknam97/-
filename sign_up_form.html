@@ -8,21 +8,27 @@
     <link href="style.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;500&family=Roboto:wght@100;300;500&display=swap" rel="stylesheet">
   </head>
   
 <body>
 <!-- header -->
-<!-- // header -->
-
+<!--// 로그인 된 상태 -> home.html 로그인 안 된 상태 -> index.html-->
+  <div class="header">
+   <a href="home.html"><img src="photos/header_logo.png"></a>
+  </div>  
 <form id="sign_up_form" method="post" action="https://bknam97.github.io/Dr.Petpaw/">
 <!--정보 받는 서버 url로 변경 필요-->
   
   <div class="sign_up_form_box">
     <!--이메일 입력, 에러 처리 필요-->
+    <h1>회원 계정 가입</h1>
+    <h2>회원 정보</h2>
     <h3 class="sign_up_title" id="email">이메일</h3>
-    <input type="email" id="input_email" placeholder="이메일을 입력해 주세요.">
-    <span class="btn"><a href=:"#"><button id="email_check_btn">이메일 확인</button></a></span>
+    <div class="input_textbox">
+      <input type="email" id="input_email" placeholder="이메일을 입력해 주세요.">
+      <span class="btn"><a href=:"#"><button id="email_check_btn">이메일 확인</button></a></span>
+    </div>
     
     
     <!--비밀번호 입력, 조건 불만족시 에러처리 필요-->
@@ -68,7 +74,7 @@
   </div>
 
   <!--제출 버튼-->
-  <button class="sign_up_btn" type="submit"><a href="home.html">가입하기</a></button>
+  <button class="sing_up_btn" type="submit"  onclick="location.href='home.html'">가입하기</button>
 </form>
 </body>
 </html>
