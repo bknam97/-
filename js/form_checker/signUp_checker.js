@@ -1,10 +1,9 @@
 var current_path= "/js/form_checker/sign_checker.js" ;
-console.info("Called %s", current_path);
+console.log("Called %s", current_path);
 
 function join()
 {
   //입력한 정보의 유효성 검사
-  alert("Join")
   var form = document.sign_up_form;
   var email = form.input_email.value;
   var pw1 = form.input_pw.value;
@@ -25,5 +24,7 @@ function join()
   console.log(nation_num)
   console.log(phone_num)
 
-  //location.href='home.html';
+  // TODO: mongodb
+
+  location.href='home.html';
 }
