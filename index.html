@@ -18,6 +18,7 @@
      <a href="#"><img src="photos/header_logo.png" width="500px"></a>
     </div> 
     
+    <form>
     <div class="sign_box">
       <form name="login_info_form">
         <div class="sign_form">
@@ -28,26 +29,25 @@
           <p class="title_text">비밀번호</p>
           <div class="input_textbox">
             <input id="sign_form_pw_input" placeholder="비밀번호를 입력해 주세요." type="password" autocomplete="current-password" value>
-            <input type="submit" autocomplete="off" style="display: none;"><!-- Q. 이건 무슨 용도? -->
           </div>
         </div>
-      <form><!-- Q. button 왜 폼 바깥?-->
       <div class="sign_in_button_wrpped">
         <button class="sign_in_button" onClick="login()">
           <span>로그인</span>
         </button>
       </div>
+      </form>
 
       <div class="line">
       </div>
       <p>SNS 간편 로그인</p>
         <div class="sns_box">
-          <button class="sns_button" id="google_sign_in" onclick="location.href='www.google.com'"> <img src="photos/google-login.png"></button>
-          <button class="sns_button" id="naver_sign_in" onclick="location.href='www.naver.com'"><img src="photos/naver-login.png"></button>
-          <button class="sns_button" id="kakao_sign_in" onclick="location.href='www.kakao.com'"><img src="photos/kakao-talk.svg"></button>
-          <button class="sns_button" id="apple_sign_in" onclick="location.href='www.apple.com'">
-          <img src="photos/apple-login.jpg"></a>
-      </div>
+          <button class="sns_button" id="google_sign_in" onClick="location.href='www.google.com'"> <img src="photos/google-login.png"></button>
+          <button class="sns_button" id="naver_sign_in" onClick="location.href='www.naver.com'"><img src="photos/naver-login.png"></button>
+          <button class="sns_button" id="kakao_sign_in" onClick="location.href='www.kakao.com'"><img src="photos/kakao-talk.svg"></button>
+          <button class="sns_button" id="apple_sign_in" onClick="location.href='www.apple.com'">
+          <img src="photos/apple-login.jpg"></button>
+        </div>
       <div class="question_sign_up">
         <p>아직 회원이 아니신가요?</p>
         <div class="sign_up_link">
