@@ -3,6 +3,7 @@ console.info("Called %s", current_path);
 
 function login()
 {
+
   //입력한 정보의 유효성 검사
   var login_form = document.login_info_form;
   var id_ = login_form.sign_form_id_input.value;
@@ -17,4 +18,14 @@ function login()
   {
     login_form.submit();
   }
+}
+  var login_form = document.login_info_form;
+  var id_ = login_form.sign_form_id_input.value;
+  var pw_ = login_form.sign_form_pw_input.value;
+
+  console.log("id: %s", id_);
+  console.log("pw: %s", pw_);
+
+  //TODO: mongodb
+  location.href='home.html';
 }
