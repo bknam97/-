@@ -1,8 +1,12 @@
 * {
   background-color: transparent;
-  font-family: 'Jua', sans-serif;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
+* a {
+  display: inherit;
+}
 body {
   background-color: #ffffff;
 }
@@ -12,9 +16,10 @@ img {
   margin: 20px auto;
 }
 .sign_box {
+  text-align: center;
   padding: 50px;
   box-sizing: border-box;
-  background-color: #E1DAB9;
+  background-color:#FEF9E7;
   display: flex;
   flex-direction: column;
   max-width: 540px;
@@ -22,6 +27,7 @@ img {
   height: auto;
   margin: 0 auto;
   border-radius: 15px;
+  color: #98968E;
 }
 .sign_form {
   background-color: transparent;
@@ -33,7 +39,7 @@ img {
   margin: 0 auto 5px auto;
   text-align: left;
   font-weight: 500;
-  color: #ffffff;
+  color: #98968E;
   font-size: 1.25rem;
 }
 
@@ -42,7 +48,7 @@ img {
   padding: 10px;
   border-radius: 10px;
   width: 80%;
-  background-color: #C9C3AB;
+  background-color: #F9E79F;
   box-sizing: border-box;
 }
 
@@ -55,7 +61,7 @@ img {
 #sign_form_pw_input {
   box-sizing: border-box;
   width: 100%;
-  background-color: #C9C3AB;
+  ackground-color: transparent;
   border: none;
 }
 
@@ -64,7 +70,7 @@ img {
   margin: 10px auto 30px auto;
   box-sizing: border-box;
   border: none;
-  background-color: #98968E;
+  background-color: rgba(134, 134, 134, 0.705);
   border-radius: 10px;
   width: 80%;
   height: 40px;
@@ -79,17 +85,20 @@ img {
   border: solid #C9C3AB;
 }
 
+.line {
+  box-sizing: border-box;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  border: solid #98968E 1px;
+  margin: 5% auto;
+}
 .sns_box {
+  margin: 10px auto;
+  width: 70%;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 100%;
-}
-.sns_sign_in  p{
-  margin: 0 10px 0 0;
-  text-align: left;
-  color: #7D7D7B;
-  font-size: auto;
 }
 
 .sns_button {
@@ -115,19 +124,15 @@ img {
 }
 
 .question_sign_up {
-  display: block;
+  display: inline;
   color: #98968E;
-}
-
-.question_sign_up::after{
-  margin: 20px;
 }
 
 a:-webkit-any-link {
     color: #98968E;
     cursor: pointer;
 }
-/*여기서부터는 회원가입 페이지 입니다*/
+/*여기서부터는 회원가입 약관 페이지 입니다*/
 h1 {
   text-align: center;
 }
@@ -135,7 +140,50 @@ h1 {
 h2 {
   text-align: center;
 }
-.service_terms {
+
+#login_suggestion {
+  display: block;
+  text-align: center;
+  margin: 0;
+}
+#login_suggestion p{
+  display: inline-block;
+  margin-right: 15px;
+}
+.go_to_sign_in {
+  display: inline-block;
+}
+.terms_box {
+ padding-top: 7%;
+ padding-bottom: 7%;
+ box-sizing: border-box;
+ border: none; 
+ background-color: #E1DAB9;
+ border-radius: 10px;
+ width: 80%;
+ max-width: 600px;
+ display: block;
+ margin: 20px auto;
+}
+
+.terms_checkbox_wrap {
+  padding: 10px;
+  box-sizing: border-box;
+  border: none;
+  background-color: #FBF6DE;
+  border-radius: 10px;
+  width: 90%;
+  margin: 20px auto;
+}
+
+.terms_checkbox{
+  display: inline-block;
+}
+
+.terms {
+  display: block;
+  font-size: 0.7em;
+  background-color: white;
   margin: 30px auto;
   box-sizing: border-box;
   border: solid #98968E;
@@ -144,24 +192,59 @@ h2 {
   height: 200px;
 }
 
-.privacy_terms{
-  margin: 30px auto;
-  box-sizing: border-box;
-  border: solid #98968E;
-  overflow: scroll;
-  width: 90%;
-  height: 200px;
-}
-
-.marketing_terms {
-  margin: 30px auto;
-  box-sizing: border-box;
-  border: solid #98968E;
-  overflow: scroll;
-  width: 90%;
-  height: 200px;
+.sub_buttons_container {
+  display: flex;
+  width: 100%;  
 }
 
 .before_level {
+  position: absolute;
+  left: 50%;
+  transform: translate(-120%);
+  cursor: pointer;
+}
 
+.next_level {
+  position: absolute;
+  left: 50%;
+  transform: translate(20%);
+  cursor: pointer;
+}
+
+.header {
+  box-sizing: border-box;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: solid #7D7D7B 1px;
+  height: 80px;
+}
+
+.header img {
+  height: 80px;
+  margin: 0 30px 0 0;
+}
+
+/*여기서부터 회원가입 정보입력 페이지*/
+.sign_up_form_box{
+ box-sizing: border-box;
+ border: none;
+ border-radius: 10px;
+ width: 80%;
+ max-width: 600px;
+ display: block;
+ margin: 5% auto;
+ padding: 5%;
+ color: #7D7D7B;
+}
+
+.sign_up_title {
+  text-align: center;
+  color: rgba(235, 198, 51, 0.603);
+}
+
+.input_email {
+  box-sizing: border-box;
+  border: none;
+  width: 90%;
 }
